@@ -1,0 +1,13 @@
+Tim, can you help me ? How can i get the previous data of GetLatestTick in Bittrex ? 
+Example: 
+https://bittrex.com/Api/v2.0/pub/market/GetLatestTick?marketName=BTC-LTC&tickInterval=fiveMin&timestamp=1514734200
+write
+{"success":true,"message":"","result":[{"O":0.01687427,"H":0.01697220,"L":0.01682000,"C":0.01694900,"V":571.53639338,"T":"2018-01-01T11:35:00","BV":9.68828861}]}
+
+but it's data from 11:35 till 11:40 and it's changes , thats why it's incorrect. 
+Correct will be after thes perios closed - in 11:41. 
+But in this time GetLatestTick will be show the data since 11:40 till 11:45 . 
+
+If i use GetTicks , i get all 4760 strings of data, but need one previous before the last.
+What can i do? What i should use ?
+Sorry for my english :)
